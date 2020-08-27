@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('Verify Branch'){
             steps{
-                sh 'pip install flask'
+                echo "$GIT_BRANCH"
             }
         }
     }
